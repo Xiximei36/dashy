@@ -1,64 +1,15 @@
 pageInfo:
-  title: Dashy
-  description: Welcome to your new dashboard!
+  title: Xiximei's navigation
+  description: Welcome to my navigation page!
   navLinks:
     - title: GitHub
-      path: https://github.com/Lissy93/dashy
-    - title: Documentation
-      path: https://dashy.to/docs
+      path: https://github.com/Xiximei36/dashy
 appConfig:
-  theme: colorful
-  layout: vertical
+  theme: glow
+  layout: auto
   iconSize: medium
+  language: cn
 sections:
-  - name: Getting Started
-    icon: fas fa-rocket
-    items:
-      - &ref_0
-        title: Dashy Live
-        description: Development a project management links for Dashy
-        icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
-        url: https://live.dashy.to/
-        target: newtab
-        id: 0_1481_dashylive
-      - &ref_1
-        title: GitHub
-        description: Source Code, Issues and Pull Requests
-        url: https://github.com/lissy93/dashy
-        icon: favicon
-        id: 1_1481_github
-      - &ref_2
-        title: Docs
-        description: Configuring & Usage Documentation
-        provider: Dashy.to
-        icon: far fa-book
-        url: https://dashy.to/docs
-        id: 2_1481_docs
-      - &ref_3
-        title: Showcase
-        description: See how others are using Dashy
-        url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
-        icon: far fa-grin-hearts
-        id: 3_1481_showcase
-      - &ref_4
-        title: Config Guide
-        description: See full list of configuration options
-        url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
-        icon: fas fa-wrench
-        id: 4_1481_configguide
-      - &ref_5
-        title: Support
-        description: Get help with Dashy, raise a bug, or get in contact
-        url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
-        icon: far fa-hands-helping
-        id: 5_1481_support
-    filteredItems:
-      - *ref_0
-      - *ref_1
-      - *ref_2
-      - *ref_3
-      - *ref_4
-      - *ref_5
   - name: 在线工具
     icon: fas fa-wrench
     displayData:
@@ -68,11 +19,35 @@ sections:
       collapsed: false
       hideForGuests: false
     items:
-      - &ref_6
+      - &ref_0
         title: 爬虫工具库
         description: feapder作者出品的爬虫工具库
         icon: https://spidertools.cn/img/feapder.5d54c199.png
         url: https://spidertools.cn/#/
         id: 0_99651_
+      - &ref_1
+        title: AST Explorer
+        description: 一个使用各种解析器生成代码的 AST 的 Web 工具
+        icon: https://astexplorer.net/favicon.png
+        url: https://astexplorer.net/
+        id: 1_99651_astexplorer
     filteredItems:
-      - *ref_6
+      - *ref_0
+      - *ref_1
+  - name: 资料文档
+    icon: fas fa-book
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_2
+        title: MDN Web API
+        description: Web API 接口参考
+        icon: https://developer.mozilla.org/favicon-48x48.bc390275e955dacb2e65.png
+        url: https://developer.mozilla.org/zh-CN/docs/Web/API
+        id: 0_114887_mdnwebapi
+    filteredItems:
+      - *ref_2
